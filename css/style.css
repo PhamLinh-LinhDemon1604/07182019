@@ -709,13 +709,13 @@ main .btn-lg {
   text-align: center;
   font-size: 14px;
 }
-.rating1 {
+/* .rating1 {
   background: #d6f5ff;
 }
 .rating2,
 .rating3 {
   background: #ffe7fc;
-}
+} */
 .row {
   margin-right: 0;
   margin-left: 0;
@@ -848,16 +848,13 @@ main .btn-lg {
   background: #fff;
   border-radius: 2px;
   border: 1px solid #d5d5d5;
-  width: 200px;
+  width: 160px;
   margin: auto;
-  margin-top: 10px;
+  padding-right: 12px;
 }
-
-.checked {
-  background: linear-gradient(140deg, #ff5db1, #ff5db1 50%, #ef007c 1%, #ef007c 99%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: rgba(219, 216, 216, 0.3);
+.fa-grin-alt {
+  font-size: 50px;
+  color: #43bfff;
 }
 .fa.fa-star {
   font-size: 18px;
@@ -866,6 +863,7 @@ main .btn-lg {
 .rating-text {
   font-weight: 600;
 }
+
 @media (max-width: 767px) {
   .product-list .product-item a .product-image {
     height: auto;
@@ -931,10 +929,16 @@ main .btn-lg {
     background: #fff;
     border-radius: 2px;
     border: 1px solid #d5d5d5;
-    width: 150px;
+    width: 140px;
     margin: auto;
-    margin-top: 20px;
-    margin-right: 10px;
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+  .rating-left p{
+    display: inline-block;
+  }
+  .rating-left .fas{
+    display: inline-block;
   }
 }
 @media (max-width: 767px) {
@@ -985,3 +989,78 @@ main .btn-lg {
   padding-bottom: 0;
 } */
 /* End list-product */
+/* rating */
+div.stars {
+  display: inline-block;
+}
+
+input.star {
+  display: none;
+}
+
+label.star {
+  float: right;
+  padding: 3px;
+  font-size: 22px;
+  color: #444;
+  transition: all 0.2s;
+  margin-bottom: 0;
+}
+
+input.star:checked ~ label.star:before {
+  content: "\f005";
+  background: linear-gradient(140deg, #ff5db1, #ff5db1 50%, #ef007c 1%, #ef007c 99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(219, 216, 216, 0.3);
+  transition: all 0.25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  background: linear-gradient(140deg, #ff5db1, #ff5db1 50%, #ef007c 1%, #ef007c 99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(219, 216, 216, 0.3);
+}
+
+input.star-1:checked ~ label.star:before {
+  background: linear-gradient(140deg, #ff5db1, #ff5db1 50%, #ef007c 1%, #ef007c 99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(219, 216, 216, 0.3);
+}
+
+input.star-6:checked ~ label.star:before {
+  background: linear-gradient(140deg, #ff5db1, #ff5db1 50%, #ef007c 1%, #ef007c 99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(219, 216, 216, 0.3);
+}
+
+input.star-10:checked ~ label.star:before {
+  background: linear-gradient(140deg, #ff5db1, #ff5db1 50%, #ef007c 1%, #ef007c 99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(219, 216, 216, 0.3);
+}
+input.star-11:checked ~ label.star:before {
+  background: linear-gradient(140deg, #ff5db1, #ff5db1 50%, #ef007c 1%, #ef007c 99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(219, 216, 216, 0.3);
+}
+
+input.star-15:checked ~ label.star:before {
+  background: linear-gradient(140deg, #ff5db1, #ff5db1 50%, #ef007c 1%, #ef007c 99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(219, 216, 216, 0.3);
+}
+label.star:hover {
+  transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before {
+  content: "\f006";
+  font-family: FontAwesome;
+}
