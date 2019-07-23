@@ -1334,4 +1334,26 @@ body{
 .main-wrapper .section-header.section-header.blue-header {
   margin-top: 15px;
 }
+.coordinator-info .general-info .coordinator-stats .header{
+  padding: 4px 0 2px;
+}
+.coordinator-info .general-info .coordinator-stats .col{
+  padding: 0;
+}
+.coordinator-info .detail-info .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.btn-bottom-bar .row{
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+}
+a:hover{
+list-style: none;
+text-decoration: none;
+color: #fff;
 }
