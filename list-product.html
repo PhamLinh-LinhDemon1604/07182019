@@ -6,6 +6,7 @@
 <head>
     <title>List product</title>
     <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,12 +19,12 @@
     <header>
         <div class="container clearfix">
             <div class="row">
-                <div class="col-auto col-left">
+                <div class="col-auto col-left" style="padding-right:0;">
                     <h1 style="margin-bottom: 25px;">
                         <span>ロゴ</span>
                     </h1>
                 </div>
-                <div class="col-auto col-right">
+                <div class="col-auto col-right" style="padding-right:0;">
                     <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         <span></span>
@@ -47,120 +48,96 @@
     </header>
     <!-- main -->
     <div class="main-wrapper container clearfix">
-        <ul class="breadcrumb-top clearfix" style="padding-left: 0;">
-            <li class="breadcrumd_item"><a href="#">トップ</a></li>
-            <li class="breadcrumd_item"><a href="#">コーディネーター 一覧 </a></li>
-            <li class="breadcrumd_item active" style="padding-left: 5px;"><a href="#">コーディネーター</a></li>
-        </ul>
+        <ul class="breadcrumb">
+            <li>
+                <a href="/">トップ</a>
+            </li>
+            <li>
+                <a href="/coordinator/list">コーディネーター 一覧</a>
+            </li>
+            <li>
+                コーディネーター
+            </li>
+            </ul>
         <h3 class="blue-header section-header clearfix">
             コーディネーター
         </h3>
-        <div class="content clearfix">
-            <div class="sidebar clearfix">
-                <section class="clearfix">
-                    <div class="top-aside">
-                        <div class="grid-panel-wrapper grid-panel row-product clearfix">
-                            <div class="col-sm">
-                                <div class="grid-panel">
-                                    <a href="#">
-                                        <div class="view-image">
-                                            <img src="./img/preview-img.png" alt="">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sale clearfix">
-                            <div class="sale-content sale1 clearfix">
-                                <p class="sale-title">
-                                    返信率
-                                </p>
-                                <p class="sale-off">
-                                    <p style="float: left; margin-left: 20px; font-size: 25px;">25</p>
-                                    <p style="font-size: 16px; margin:0; float: left; margin-top: 9px;">%</p>
-                                </p>
-                            </div>
-                            <div class="sale-content sale2 clearfix">
-                                <p class="sale-title">
-                                    返信時間
-                                </p>
-                                <p class="sale-off">
-                                    <p style="float: left; margin-left: 20px; font-size: 25px;">25</p>
-                                    <p style="font-size: 16px; margin:0; float: left; margin-top: 9px;">分</p>
-
-                                </p>
-                            </div>
-                            <div class="sale-content clearfix">
-                                <p class="sale-title">
-                                    返信率
-                                </p>
-                                <p class="sale-off">
-                                    <p style="float: left; margin-left: 20px; font-size: 25px;">25</p>
-                                    <p style="font-size: 16px; margin:0; float: left; margin-top: 9px;">%</p>
-                                </p>
-                            </div>
+        <section class="coordinator-info">
+            <div class="row">
+                <div class="general-info col col-sm-3">
+                <div class="coordinator-overview">
+                    <div class="coordinator-img">
+                    <img src="img/preview-img.png" alt="">
+                    </div>
+                    <div class="coordinator-stats row">
+                    <div class="col">
+                        <div class="header">返信率</div>
+                        <div class="number">25<span class="unit">%</span></div>
+                    </div>
+                    <div class="col">
+                        <div class="header">返信時間</div>
+                        <div class="center number">
+                        <span>25<span class="unit">分</span></span>
+                        <span class="text">以内</span>
                         </div>
                     </div>
-                    <a href="" class="btn-pink btn-aside btn-lg"><img src="./img/heart-icon.png" alt="">お気に入りに登録</a>
-                    <a href="" class="btn-blue btn-aside btn-lg"><img src="./img/cmt-icon.png" alt="">ダイレクトメッセージ</a>
-                    <a href="" class="btn-red btn-aside btn-lg"><img src="./img/shirt-icon.png" alt="">コーデ依頼する</a>
-
-                </section>
-            </div>
-            <div class="main-content clearfix">
-                <div class="form-section">
-                    <div class="form-group">
-                        <div class="title left-col">名前</div>
-                        <div class="right-col">あいうえおかきくけこ（女性・20歳）</div>
+                    <div class="col">
+                        <div class="header">承認率</div>
+                        <div class="number">25<span class="unit">%</span></div>
                     </div>
-                    <div class="form-group">
-                        <div class="title left-col">対応地域</div>
-                        <div class="right-col">大阪</div>
-                    </div>
-                    <div class="form-group">
-                        <div class="title left-col">対応地域</div>
-                        <div class="right-col">
-                            <p style="font-weight: 600; margin-bottom: 0;">得意なジャンル</p>
-                            カジュアル
-                            <br /><br />
-                            <p style="font-weight: 600; margin-bottom: 0;">その他対応できるジャンル</p>
-                            サブジャンル名 / サブジャンル名 / サブジャンル名 / サブジャンル名
-                            <br /><br />
-                            <p style="font-weight: 600; margin-bottom: 0;">対応シーン</p>
-                            デート/普段着/飲み会・合コン/部屋着/ビジネス(スーツ系)/ビジネス(非スーツ)旅行/お祭り/アウトドア/パーティ/結婚式・二次会
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="title left-col">対応できる性別</div>
-                        <div class="right-col">対応できる性別</div>
-                    </div>
-                    <div class="form-group">
-                        <div class="title left-col">対応できる年齢</div>
-                        <div class="right-col">20代〜30代</div>
-                    </div>
-                    <div class="form-group">
-                        <div class="title left-col">対応できる日時</div>
-                        <div class="right-col">平日　13時〜18時</div>
-                    </div>
-                    <div class="form-group">
-                        <div class="title left-col">料金</div>
-                        <div class="right-col">2,000円 / 1H</div>
-                    </div>
-                    <div class="form-group">
-                        <div class="title left-col">備考</div>
-                        <div class="right-col">
-                            備考サンプルテキスト備考サンプルテキスト備考サンプルテキスト備考サンプルテキス<br />
-                            ト備考サンプルテキスト備考サンプルテキスト備考サンプルテキスト備考サンプルテキ<br />
-                            スト備考サンプルテキスト備考サンプルテキスト備考サンプルテキスト備考サンプルテ<br />
-                            キスト
-                        </div>
                     </div>
                 </div>
+                <div class="coordinator-interact">
+                    <a href="#" class="btn-heart btn-lg" data-toggle="modal" data-target="#myLogin"><img src="img/heart-icon.png" alt="Heart">お気に入りに登録</a>
+                    <a href="#" class="btn-blue btn-lg" data-toggle="modal" data-target="#myLogin"><img src="img/cmt-icon.png" alt="Message">ダイレクトメッセージ</a>
+                    <a href="#" class="btn-shirt btn-lg" data-toggle="modal" data-target="#myLogin"><img src="img/shirt-icon.png" alt="Shirt">コーデ依頼する</a>
+                 </div>
+                </div>
+                <div class="detail-info col-9">
+                <div class="row">
+                    <div class="col-title col"> 名前 </div>
+                    <div class="col-data col"> あいうえおかきくけこ（女性・20歳） </div>
+                </div>
+                <div class="row">
+                    <div class="col-title col"> 対応地域 </div>
+                    <div class="col-data col"> <p>大阪</p> </div>
+                </div>
+                <div class="row">
+                    <div class="col-title col">ジャンル/シーン</div>
+                    <div class="col-data col">
+                    <p><strong>得意なジャンル</strong></p><p >カジュアル</p> <p></p>
+                    <p><strong>その他対応できるジャンル</strong> </p><p >サブジャンル名 / サブジャンル名 / サブジャンル名 / サブジャンル名</p><p></p>
+                    <p><strong>対応シーン</strong></p><p > デート/普段着/飲み会・合コン/部屋着/ビジネス(スーツ系)/ビジネス(非スーツ)旅行/お祭り/アウトドア/パーティ/結婚式・二次会</p> <p></p>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-title col">対応できる性別</div>
+                    <div class="col-data col">対応できる性別</div>
+                </div>
+                <div class="row"> 
+                    <div class="col-title col">対応できる年齢</div>
+                    <div class="col-data col">13時〜18時</div>
+                </div>
+                <div class="row">
+                    <div class="col-title col"> 対応できる日時</div>
+                    <div class="col-data col"> 平日</div>
+                </div>
+                <div class="row">
+                    <div class="col-title col"> 料金</div>
+                    <div class="col-data col"> 2,000円 / 1H</div>
+                </div>
+                <div class="row">
+                    <div class="col-title col">備考 </div>
+                    <div class="col-data col"> 備考サンプルテキスト備考サンプルテキスト備考サンプルテキスト備考サンプルテキス<br />
+                        ト備考サンプルテキスト備考サンプルテキスト備考サンプルテキスト備考サンプルテキ<br />
+                        スト備考サンプルテキスト備考サンプルテキスト備考サンプルテキスト備考サンプルテ<br />
+                        キスト</div>
+                </div>
+                </div>
             </div>
-        </div>
+            </section>
         <section class="notice clearfix">
-            <p class="notice-header clearfix">アピールタイトルあいうえおサンプルテキストサンプルテキスト</p>
+            <p class="notice-header clearfix">アピールタイトルあいうえおサンプルテキスト</p>
             <div class="notice-content clearfix">
                 アピール内容サンプルテキストアピール内容サンプルテキストアピール内容サンプルテキストアピール内容サンプルテキストアピール内容サンプ<br />
                 ルテキストアピール内容サンプルテキストアピール内容サンプルテキストアピール内容サンプルテキスト<br />
@@ -230,18 +207,18 @@
                 コーデ一覧
             </h3>
             <div class="rating-review row">
-                <div class="col-sm-2 rating rating1"  id="rating-color1">
+                <div class="col-sm-2 rating rating1" id="rating-color1">
                     <div class="rating-left">
                         <i class="fas fa-grin-alt" id="icon"></i>
-                        <p>サンプルネームさん<br />
-                            （男性）</p>
+                        <p><strong>サンプルネームさん<br/>
+                            （男性）</strong></p>
                     </div>
                     <div class="stars rating-right">
                         <form action="">
                             <input class="star star-1" id="star-1" type="radio" name="star" />
                             <label class="star star-1" for="star-1"></label>
 
-                            <input class="star star-2" id="star-2"type="radio" name="star" />
+                            <input class="star star-2" id="star-2" type="radio" name="star" />
                             <label class="star star-2" for="star-2"></label>
 
                             <input class="star star-3" id="star-3" type="radio" name="star" />
@@ -249,7 +226,7 @@
 
                             <input class="star star-4" id="star-4" type="radio" name="star" />
                             <label class="star star-4" for="star-4"></label>
-                            
+
                             <input class="star star-5" id="star-5" type="radio" name="star" />
                             <label class="star star-5" for="star-5"></label>
                         </form>
@@ -275,7 +252,7 @@
                             <input class="star star-1" id="star-6" type="radio" name="star" />
                             <label class="star star-1" for="star-6"></label>
 
-                            <input class="star star-2" id="star-7"type="radio" name="star" />
+                            <input class="star star-2" id="star-7" type="radio" name="star" />
                             <label class="star star-2" for="star-7"></label>
 
                             <input class="star star-3" id="star-8" type="radio" name="star" />
@@ -283,7 +260,7 @@
 
                             <input class="star star-4" id="star-9" type="radio" name="star" />
                             <label class="star star-4" for="star-9"></label>
-                            
+
                             <input class="star star-5" id="star-10" type="radio" name="star" />
                             <label class="star star-5" for="star-10"></label>
                         </form>
@@ -311,7 +288,7 @@
                             <input class="star star-1" id="star-11" type="radio" name="star" />
                             <label class="star star-1" for="star-11"></label>
 
-                            <input class="star star-2" id="star-12"type="radio" name="star" />
+                            <input class="star star-2" id="star-12" type="radio" name="star" />
                             <label class="star star-2" for="star-12"></label>
 
                             <input class="star star-3" id="star-13" type="radio" name="star" />
@@ -319,12 +296,12 @@
 
                             <input class="star star-4" id="star-14" type="radio" name="star" />
                             <label class="star star-4" for="star-14"></label>
-                            
+
                             <input class="star star-5" id="star-15" type="radio" name="star" />
                             <label class="star star-5" for="star-15"></label>
                         </form>
                     </div>
-                    
+
                 </div>
                 <div class="col-sm-10 review">
                     <p>
@@ -335,12 +312,16 @@
                 </div>
             </div>
         </section>
-        <section class="clearfix" style="margin-top: 28px;">
-            <a href="" class="btn-blue btn-lg" style="line-height: 50px;"><img src="./img/cmt-icon.png"
-                    alt="">ダイレクトメッセージ</a>
-            <a href="" class="btn-red btn-lg btn-red-bottom" style="line-height: 50px;"><img src="./img/shirt-icon.png"
-                    alt="">コーデ依頼する</a>
-        </section>
+        <div class="btn-bottom-bar">
+                <div class="row">
+                    <div class="col">
+                        <a href="#" data-toggle="modal" data-target="#myLogin" class="btn-blue btn-lg"><img src="./img/cmt-icon.png" alt="Message">ダイレクトメッセージ</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" data-toggle="modal" data-target="#myLogin" class="btn-shirt btn-lg"><img src="./img/heart-icon.png" alt="Shirt">コーデ依頼する</a>
+                    </div>
+                </div>
+                    </div>
     </div>
     <!-- end main -->
 
@@ -362,98 +343,98 @@
         var star4 = document.getElementById("star-2");
         var star5 = document.getElementById("star-1");
         var div = document.getElementById('rating-color1');
-        var icon=document.getElementById('icon');
+        var icon = document.getElementById('icon');
 
         star1.onclick = function () {
 
             div.style.background = "#d6f5ff";
-            icon.style.color="#43bfff";
+            icon.style.color = "#43bfff";
         };
         star2.onclick = function () {
 
             div.style.background = "#d6f5ff";
-            icon.style.color="#43bfff";
+            icon.style.color = "#43bfff";
         };
         star3.onclick = function () {
 
             div.style.background = "#d6f5ff";
-            icon.style.color="#43bfff";
+            icon.style.color = "#43bfff";
         };
         star4.onclick = function () {
 
             div.style.background = "#ffe7fc";
-            icon.style.color="#fe7cd1";
+            icon.style.color = "#fe7cd1";
         };
         star5.onclick = function () {
 
             div.style.background = "#ffe7fc";
-            icon.style.color="#fe7cd1";
+            icon.style.color = "#fe7cd1";
         };
         var star6 = document.getElementById("star-10");
         var star7 = document.getElementById("star-9");
         var star8 = document.getElementById("star-8");
-        var star9= document.getElementById("star-7");
+        var star9 = document.getElementById("star-7");
         var star10 = document.getElementById("star-6");
         var div2 = document.getElementById('rating-color2');
-        var icon2=document.getElementById('icon2');
+        var icon2 = document.getElementById('icon2');
 
         star6.onclick = function () {
 
             div2.style.background = "#d6f5ff";
-            icon2.style.color="#43bfff";
+            icon2.style.color = "#43bfff";
         };
         star7.onclick = function () {
 
             div2.style.background = "#d6f5ff";
-            icon2.style.color="#43bfff";
+            icon2.style.color = "#43bfff";
         };
         star8.onclick = function () {
 
             div2.style.background = "#d6f5ff";
-            icon2.style.color="#43bfff";
+            icon2.style.color = "#43bfff";
         };
         star9.onclick = function () {
 
             div2.style.background = "#ffe7fc";
-            icon2.style.color="#fe7cd1";
+            icon2.style.color = "#fe7cd1";
         };
         star10.onclick = function () {
 
             div2.style.background = "#ffe7fc";
-            icon2.style.color="#fe7cd1";
+            icon2.style.color = "#fe7cd1";
         };
         var star11 = document.getElementById("star-15");
         var star12 = document.getElementById("star-14");
         var star13 = document.getElementById("star-13");
-        var star14= document.getElementById("star-12");
+        var star14 = document.getElementById("star-12");
         var star15 = document.getElementById("star-11");
         var div3 = document.getElementById('rating-color3');
-        var icon3=document.getElementById('icon3');
+        var icon3 = document.getElementById('icon3');
 
         star11.onclick = function () {
 
             div3.style.background = "#d6f5ff";
-            icon3.style.color="#43bfff";
+            icon3.style.color = "#43bfff";
         };
         star12.onclick = function () {
 
             div3.style.background = "#d6f5ff";
-            icon3.style.color="#43bfff";
+            icon3.style.color = "#43bfff";
         };
         star13.onclick = function () {
 
             div3.style.background = "#d6f5ff";
-            icon3.style.color="#43bfff";
+            icon3.style.color = "#43bfff";
         };
         star14.onclick = function () {
 
             div3.style.background = "#ffe7fc";
-            icon3.style.color="#fe7cd1";
+            icon3.style.color = "#fe7cd1";
         };
         star15.onclick = function () {
 
             div3.style.background = "#ffe7fc";
-            icon3.style.color="#fe7cd1";
+            icon3.style.color = "#fe7cd1";
         };
     </script>
 

@@ -42,7 +42,7 @@
       
     }
   .btn-lg.btn-pink, .btn-lg.btn-blue, .btn-red {
-    font-size: 14px;
+    font-size: 22px;
     width: 100%;
     margin-bottom: 10px;
     margin-left: 0; }
@@ -272,13 +272,8 @@
     .list-img{
       margin-bottom: 0;
     }
-  .btn-lg.btn-pink, .btn-lg.btn-blue, .btn-red {
-    font-size: 14px;
-    width: 100%;
-    margin-left: 0;
-  margin-bottom: 10px; }
     .btn-lg.btn-pink img, .btn-lg.btn-blue img {
-      height: 12px; }
+      height: 22px; }
   header {
     height: 50px;
     position: fixed;
@@ -301,7 +296,7 @@
           min-width: 100px; }
     header .col-right {
       position: relative;
-      width: calc(100% - 140px); }
+      width: calc(100% - 101px); }
       header .col-right button {
         display: block;
         position: absolute;
